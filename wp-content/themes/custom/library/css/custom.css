@@ -1,0 +1,308 @@
+/* ======== GENERAL STYLES ============ */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:100,400,700';
+
+
+/* fade effects */
+a, button, input { 
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  color: #33302f;
+  background: #FFF;
+  }
+  
+#main-content-container, #content {  }
+  
+.row { max-width: 1040px; }
+
+/* style for all headers */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { 
+	margin-bottom: 15px; margin-top: 15px;
+	}
+
+/* large headers are bold  */
+h1, .h1, h2, .h2, h3, .h3, h5, .h5 { 
+	font-weight: 800; 
+	}
+	
+/* these headers are normal */
+h6, .h6 { 
+	font-weight: 400; 
+}
+	
+	/* these headers are slim */
+h4, .h4 { 
+	font-weight: 100; 
+}
+
+
+
+/* these headers are coloured */
+h1, .h1, h2, .h2, h3, .h3 {
+	color: #33302f;
+}
+
+/* header sizes */
+h1, .h1 { font-size: 26pt; }
+h2, .h2 { font-size: 21pt; }
+h3, .h3 { font-size: 18pt }
+h4, .h4 { font-size: 14pt; }
+h5, .h5 { font-size: 10pt; }
+h6, .h6 { font-size: 8pt; }
+
+
+/* paragraph styles */
+p { }
+
+#header p, #footer p { margin: 0; line-height: auto;}
+#main-content-container p {
+	line-height: 20pt;
+    margin-bottom: 15px; margin-top: 15px;
+}
+
+
+/* input styles */
+input, textarea, select{ width: 100%; border: 1px solid #ccc; }
+input[type="radio"] { width: auto; }
+.wpcf7-list-item { margin-right: 10px; }
+input[type="submit"], .button { 
+	border: 0;
+	padding: 15px 0;
+	cursor: pointer;
+	background: #33302f;
+	color: #FFF;
+	font-size: 14pt;
+	
+	}
+input[type="submit"]:hover { background: #FFF; color: #33302f; }
+	
+/* link colours */
+
+a, a:visited { color: #33302f; }
+a:hover, a:hover *, a:focus, #header .textwidget a:hover, .copyright a:hover { color: #FA0; }
+
+
+/* useful styles */
+.light { font-weight: 100; }
+.heavy, .bold { font-weight: 800; }
+.small { font-size: 70%; }
+.large { font-size: 150%; }
+.caps { text-transform: uppercase; }
+.center { text-align: center; }
+.round, .round * { border-radius: 999px; }
+
+/* list styles */
+#main-content-container ol, #main-content-container ul { 
+	list-style-type: inherit; 
+	margin: 0 30px 15px; 
+	}
+
+/* buttons */
+.button {
+	display: block;
+	max-width: 180px;
+	margin: 10px auto;
+	color: #FFF;
+	font-weight: 800;
+	font-size: 10pt;
+	text-transform: uppercase;
+	}
+.button:hover, .button:focus { background: #252525; color: #fff; }
+
+
+  
+/* make fullwidth any item with this property */
+.fullwidth { max-width: 100%; width: 100%;}
+
+
+
+/* header */
+#header {   }
+#header .textwidget h4 { color: #fff; margin: 0;}
+#header .textwidget a {  font-weight: 800; font-size: 10pt;  } /* make header contact info links bold */
+
+#header #top-contact h3 {  color: #fff; }
+#header #top-contact { text-align: right; }
+#header .top-contact-title { font-style: italic; margin: 0; }
+
+#menu-container { background: #33302f; } }
+#mega-menu-main-nav li { letter-spacing: 0.5pt; }
+
+.vertical-center { display: flex; align-items: center; } /* vertically center the header divs */
+
+/* Hero */
+.hero { 
+	background: url("/wp-content/themes/custom/library/images/hero.jpg") center center no-repeat; 
+	background-size: cover;
+	min-height: 350px; 
+	padding-top: 60px;
+}
+.hero #home-before-content { 
+	max-width: 600px; 
+	margin: auto; 
+	padding: 0 20px; 
+	box-sizing: border-box; 
+	}
+.hero #home-before-content .textwidget { 
+	text-align: center; 
+	color: #FFF;
+	font-size: 16pt;
+	text-shadow: 0px 0px 2px rgba(255,255,255,1),
+                 0px 0px 5px rgba(255,255,255,0.6),
+				 0px 0px 30px rgba(255,255,255,0.7);
+				 0px 0px 50px rgba(255,255,255,1);
+	}
+
+	
+/* ==== MAIN CONTENT ==== */
+.row.container { max-width: 1040px; }
+.title-row,
+.maincont-row,
+.sidebar { margin: 50px 0; }	
+.row.main-content { width: 100%; }
+
+.main-content-column {  }
+
+/* main sidebar */
+.sidebar-widget { margin-bottom: 40px; text-align: center; font-size: 11pt;}
+
+/* hide page title on homepage */
+body.home h1.page-title { display: none; }
+
+
+/* standard gallery formatting */
+dl { 
+	display: inline-block;
+	float: left;
+	padding: 5px;
+	}
+
+	.gallery-columns-1 dl { width: 100%;}
+	.gallery-columns-2 dl { width: 50%;}
+	.gallery-columns-3 dl { width: 33.3%;}
+	.gallery-columns-4 dl { width: 25%;}
+	.gallery-columns-5 dl { width: 20%;}
+	.gallery-columns-6 dl { width: 16.6%;}
+	
+img.alignright {
+    float: right;
+    margin: 10px 0 10px 10px;
+}
+img.alignleft {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+
+/* contact page */
+.wpcf7-form p { margin: 0; }
+
+
+/* editor links */
+.edit-controls { margin: 20px 0; }
+.post-edit-link, #vc_load-inline-editor, #visual-edit-link {
+    border-radius: 3px;
+	box-sizing: border-box;
+    display: inline-block;
+    font-size: 10pt;
+    padding: 5px 10px;
+}
+.post-edit-link {
+background: #ccc; color: #555 !important; }
+.post-edit-link:hover { background: #f2f2f2; color: #555; }
+	
+#vc_load-inline-editor, #visual-edit-link {
+    background: #54C13F;
+    box-shadow: 0 1px 0 #419730;
+    color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 80%;
+    text-shadow: 0 -1px 1px #419730, 1px 0 1px #419730, 0 1px 1px #419730, -1px 0 1px #419730;
+}	
+#vc_load-inline-editor:hover, #visual-edit-link:hover { background: #5bd942;}
+
+
+	
+/* ==== footer ==== */
+#footer {  } 
+#footer p { margin: 0; }
+
+#footer * { font-size: 10pt;}
+
+/* widget titles */
+#footer .columns { margin: 10px 0;}
+#footer h3.footer-title { 
+	border-bottom: 1px solid #f46b63;
+	padding: 5px 0;
+	font-size: 1.4em;
+	margin: 0;
+	}
+
+	
+
+
+/* copyright row */
+.copyright { }
+.copyright a {  }
+.copyright .columns { padding: 15px; }
+.copy, .credit {  margin: 0;}
+
+
+
+
+
+
+/* == mobile & wide mobile == */
+@media screen and (max-width: 719px) {
+
+/* center-align the tagline on small screens */
+#header #top-contact {
+    text-align: center;
+}
+
+/* logo */
+#header .row .columns { margin: 10px 0; }
+
+
+
+#logo {
+    margin: 20px auto 0;
+    max-width: 250px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+
+/* responsive menu toggle button */
+#mega-menu-wrap-main-nav .mega-menu-toggle #mega-toggle-block-1::after,
+#mega-menu-wrap-main-nav .mega-menu-toggle #mega-toggle-block-1::before { color: #fff; font-weight: bold;}
+#mega-menu-main-nav * { text-align: center; }
+}
+
+
+
+
+
+
+/* == laptop and smaller == */
+@media screen and (max-width: 39.9375em) {
+.desktop { display: none; }
+}
+
+
+
+
+
+
+/* == tablet & full width == */
+@media screen and (min-width: 40em) {
+.mobile { display: none; }
+
+}
